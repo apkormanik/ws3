@@ -1,0 +1,173 @@
+    1  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    2  ls
+    3  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+    4  grep 'verified' amazon_reviews_us_Books_v1_02.tsv.gz > verified.txt
+    5  ls
+    6  grep 'verified' amazon_reviews_us_Books_v1_02.tsv.gz > verified.txt
+    7  grep 'verified' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+    8  cmdline amazon_reviews_us_Books_v1_02.tsv
+    9  vi amazon_reviews_us_Books_v1_02.tsv
+   10  ls
+   11  grep 'verified' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+   12  grep -v 'verified' amazon_reviews_us_Books_v1_02.tsv > unverified.txt
+   13  wc verified.txt > counts.txt
+   14  wc unverified.txt >> counts.txt
+   15  vi counts.txt
+   16  history > cmds.log
+   17  ls
+   18  git status
+   19  git init
+   20  git status
+   21  git add counts.txt
+   22  git add cmds.log
+   23  git status
+   24  git commit -m "Worksheet2 commit"
+   25  git config --global user.email "aidan.kormanik@sjsu.edu"
+   26  git commit -m "Worksheet2 commit"
+   27  git remote add origin https://github.com/apkormanik/Worksheet2.git
+   28  git branch -M main
+   29  git push -u origin main
+   30  echo "# Worksheet2" >> README.md
+   31  git init
+   32  git add README.md
+   33  git commit -m "first commit"
+   34  git branch -M main
+   35  git remote add origin https://github.com/apkormanik/Worksheet2.git
+   36  git push -u origin ma
+   37  clear
+   38  git status
+   39  ls
+   40  git git commit -m "Your message about the commit"
+   41  git commit -m "Worksheet 2 commit"
+   42  git config --global user.name "Aidan Kormanik"
+   43  git commit -m "Worksheet 2 commit"
+   44  git remote add origin https://github.com/apkormanik/Worksheet2.git
+   45  git branch -M main
+   46  git push -u origin main
+   47  ls
+   48  cd
+   49  pwd
+   50  id -u
+   51  echo $UID
+   52  whoami
+   53  groups
+   54  id
+   55  ls
+   56  cd /proc
+   57  ls
+   58  cd
+   59  cd /proc
+   60  cd meminfo
+   61  head meminfo
+   62  tail cpuinfo
+   63  cd
+   64  ls
+   65  ls -l amazon_reviews_us_Books_v1_02.tsv.gz.1
+   66  cd
+   67  pwd
+   68  id -u
+   69  whoami
+   70  groups
+   71  mkdir temp
+   72  chmod -x temp
+   73  cd temp
+   74  ls temp
+   75  ls -l temp
+   76  mkdir test
+   77  mv test temp
+   78  mkdir test2
+   79  mv test2 test
+   80  cp test testcopy
+   81  cp -avr test testcopy
+   82  cd /proc
+   83  ls
+   84  head meminfo
+   85  tail cpuinfo
+   86  cd
+   87  ls
+   88  ls -l amazon_reviews_us_Books_v1_02.tsv.gz.1
+   89  grep -c "great" amazon_reviews_us_Books_v1_02.tsv
+   90  clear
+   91  script a1.txt
+   92  less at.txt
+   93  less a1.txt
+   94  vi a1.txt
+   95  git init
+   96  git status
+   97  git add a1.txt
+   98  git status
+   99  git remote add origin https://github.com/apkormanik/a1.git
+  100  git branch -M main
+  101  git push -u origin main
+  102  git commit -m "Commit for the a1.txt file"
+  103  git remote add origin https://github.com/apkormanik/a1.git
+  104  git branch -M main
+  105  git push -u origin main
+  106  git status
+  107  git add a1.txt
+  108  git status
+  109  echo "# a1" >> README.md
+  110  git init
+  111  git add README.md
+  112  git commit -m "first commit"
+  113  git branch -M main
+  114  git remote add origin https://github.com/apkormanik/a1.git
+  115  git push -u origin main
+  116  mkdir a1
+  117  mv a1.txt a1
+  118  ls
+  119  cd a1
+  120  ls
+  121  git init
+  122  git status
+  123  git add a1.txt
+  124  git commit -m "Commit for a1.txt file"
+  125  git remote add origin https://github.com/apkormanik/a1.git
+  126  git branch -M main
+  127  git push -u origin main
+  128  cd ws3
+  129  cut -d " " -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  130  cut -d " " -f 4 ../amazon_reviews_us_Books_v1_02.tsv > productids.txt
+  131  sort productids.txt | uniq -c | sort -nk1 --reverse | head
+  132  head productids.txt
+  133  head customerids.txt
+  134  cut -d " " -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  135  wc *txt
+  136  head customerids.txt
+  137  cut -d " " -f 1 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  138  head customerids.txt
+  139  cut -d " " -f 3 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  140  head customerids.txt
+  141  head -n 1 ../amazon_reviews_us_Books_v1_02.tsv 
+  142  cut -d " " -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  143  head customerids.txt
+  144  ls -altr
+  145  clear
+  146  ls
+  147  mkdir ws3
+  148  cd ws3
+  149  cd
+  150  script ws3.txt
+  151  ls
+  152  cd ws3
+  153  cd
+  154  cd ws3
+  155  ls
+  156  head customerids.txt
+  157  cd ls
+  158  rmdir ws3.txt
+  159  head -n 1 ../amazon_reviews_us_Books_v1_02.tsv
+  160  cud -d " " -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  161  cut -d " " -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  162  head customerids.txt
+  163  cut -d " " -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  164  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  165  head customerids.txt
+  166  claer
+  167  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt
+  168  sort customerids.txt | uniq -c | sort -nk1 --reverse |head
+  169  cut -f 4 ../amazon_reviews_us_Books_v1_02.tsv > productids.txt
+  170  sort productids.txt | uniq -c | sort -nk1 --reverse | head
+  171  cut -f 9 ../amazon_reviews_us_Books_v1_02.tsv > helpful.txt
+  172  sort helpful.txt | uniq -c | sort -nk1 --reverse | head
+  173  history > cmds.log
